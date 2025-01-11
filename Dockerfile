@@ -1,4 +1,1 @@
-FROM nginx:latest
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
-EXPOSE 39901
-CMD ["nginx", "-g", "daemon off;"]
+docker run -d -p 39901:39901 --name pkc-agent curtinlv/pkc-agent
